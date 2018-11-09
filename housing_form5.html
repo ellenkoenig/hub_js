@@ -1,0 +1,66 @@
+<html>
+<head></head>
+<body>
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/animate.css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/rmodal/dist/rmodal.css" type="text/css" />
+    <script type="text/javascript" src="https://unpkg.com/rmodal/dist/rmodal.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ellenkoenig/hub_js@master/form_hub.js"></script>
+     	
+  	<strong>First name</strong> <input type="text" id="name" class="forminput">
+  	<strong>Surname</strong><input type="text" id="surname" class="forminput">
+	<strong>E-mail</strong><input type="text" id="email" class="forminput">
+	<strong>Age</strong><input type="number" id="age" class="forminput">
+	<strong>Income (in €€)</strong><input type="number" id="income" class="forminput">
+	<strong><strong>Gender</strong><input type="text" id="gender" class="forminput">
+	<strong>Ethnicity</strong><input type="text" id="ethnicity" class="forminput">  
+	<strong>Previous address</strong><input type="textarea" id="previousAddress" class="forminput">
+	 <input type="submit" onclick="fancyAICall()">
+
+  <div id="modalYes" class="modal">
+        <div class="modal-dialog animated">
+            <div class="modal-content">
+                <form class="form-horizontal" method="get">
+                    <div class="modal-header">
+                        <strong>YES!</strong>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="dummyText" class="control-label col-xs-4"><p>Splendid! We are marvellously pleased to offer you the SAGA built, Grosvenor finished apartment in Berlin Mitte!</p> <p>On behalf of the residents of the tower, we should say, what a privilege to have you here!</p></label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" onclick="modalYes.close();">Ok</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div id="modalNo" class="modal">
+        <div class="modal-dialog animated">
+            <div class="modal-content">
+                <form class="form-horizontal" method="get">
+                    <div class="modal-header">
+                        <strong>We are so sorry...</strong>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="dummyText" class="control-label col-xs-4"><p>We regret to inform you that at this time, we have chosen that your residence remains in “Somewhere far away from the city of Berlin”. </p><p>Please feel free to contact us again. We look forward to the possibility of allocation in the future!</p></label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" onclick="modalNo.close();">Ok</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
